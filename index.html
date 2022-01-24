@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Color Flipper App</title>
+</head>
+<body>
+    <!-- Hex Code -->
+    <section>
+        <button onclick="copyText()" class="hex-code" data-clipboard-target=".hex-code"></button>
+        <div class="guiding-texts">
+            <p>Click on the Hex Color to <strong>copy</strong> it <em class="fas fa-level-up-alt"></em></p>
+            <p>Press the Button below to <strong>generate</strong> New Color <em class="fas fa-level-down-alt"></em></p>
+        </div>
+        <button onclick="randomHexColor()">GENERATE NEW COLOR</button>
+    </section>
+
+    <script src="/node_modules/clipboard/dist/clipboard.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
